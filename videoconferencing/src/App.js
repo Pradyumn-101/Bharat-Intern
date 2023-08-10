@@ -2,13 +2,13 @@ import * as React from 'react';
 import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
 
 export default function App() {
-  const roomID = "ankitanand";
+  const roomID = "pradyumn";
   let myMeeting = async (element) => {
 
  // generate Kit Token
  const appID = 1884422339;
  const serverSecret = "aac1a778919d8b4303947c36b353b911";
- const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID,  Date.now().toString(),  "Ankit Anand");
+ const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID,  Date.now().toString(),  "Pradyumn Gupta");
 
  // Create instance object from Kit Token.
  const zp = ZegoUIKitPrebuilt.create(kitToken);
